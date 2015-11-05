@@ -1,0 +1,115 @@
+clearfix()
+  zoom 1
+  &:after
+    content ""
+    display block
+    clear both
+
+sprite()
+  inline-block()
+  box-sizing border-box
+  overflow hidden
+  vertical-align middle
+  background-size 100% !important
+  text-indent -999px
+  font-size 1
+
+modal()
+  position fixed
+  z-index 10
+  top 0
+  left 0
+  right 0
+  bottom 0
+  margin 0
+  background rgba(0,0,0,.5)
+  overflow auto
+  transition opacity 0.3s ease-in-out, transform 0.3s ease-in-out
+  opacity 1
+  transform scale(1)
+
+modal____enter()
+  modal()
+  opacity 0
+  transform scale(1.05)
+
+modal____enter-active()
+  modal()
+  opacity 1
+  transform scale(1)
+
+modal____leave()
+  modal()
+  opacity 1
+  transform scale(1)
+
+modal____leave-active()
+  modal()
+  opacity 0
+  transform scale(1.05)
+
+float-left()
+  float left
+  display inline
+  zoom 1
+
+float-right()
+  float right
+  display inline
+  zoom 1
+
+inline-block()
+  display inline-block
+  zoom 1
+  vertical-align middle
+
+appearance(prop)
+  appearance prop
+  -webkit-appearance prop
+  -moz-appearance prop
+  -ms-appearance prop
+
+outline(prop)
+  outline prop
+  -webkit-outline prop
+  -moz-outline prop
+  -ms-outline prop
+
+box-shadow(prop)
+  box-shadow prop
+  -webkit-box-shadow prop
+  -moz-box-shadow prop
+  -ms-box-shadow prop
+
+box-sizing(prop)
+  box-sizing prop
+  -webkit-box-sizing prop
+  -moz-box-sizing prop
+  -ms-box-sizing prop
+
+border-radius(prop)
+  border-radius prop
+  -webkit-border-radius prop
+  -moz-border-radius prop
+  -ms-border-radius prop
+
+
+button()
+  appearance(none)
+  box-shadow(none)
+  outline(none)
+  cursor pointer
+  background none
+  border none
+  margin 0
+  padding 0
+  box-sizing(border-box)
+  display block
+  width 100%
+  max-width none
+  height auto
+  text-align left
+
+  &::-moz-focus-inner
+    border 0
+    padding 0

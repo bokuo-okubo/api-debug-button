@@ -11,7 +11,7 @@ var config = {
   html_src_path              : 'src/',
   html_build_path            : 'dist/',
   html_debug_build_path      : 'dist/',
-  debug_path                 : 'src/',
+  debug_path                 : 'dist/',
   debug_dir                  : '',
   karma_conf_path            : 'karma.conf.js',
   bs_config_path             : 'scripts/bs-config',

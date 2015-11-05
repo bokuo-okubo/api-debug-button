@@ -9,6 +9,8 @@ var watch_test = require('./watch-test');
 var browser = require('./browser-sync');
 var entryPoint = require('./entry-point');
 var html = require('./build-html');
+var path = require('path');
+global.appRoot = path.resolve(__dirname, '..');
 
 function main() {
   var entries = entryPoint();
