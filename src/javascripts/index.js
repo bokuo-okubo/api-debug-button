@@ -7,9 +7,6 @@ const App = require('components/index/App');
 const global = Function("return this")();
 const document = global.document;
 
-if (document) {
-  ReactDOM.render(<App/>, document.getElementById('App'));
-} else {
-  global.template = ReactDOMServer.renderToString(<App/>);
-}
+ReactDOM.render(<App/>, document.getElementById('App'));
+
 
