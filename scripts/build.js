@@ -4,7 +4,7 @@ var Promise = require('bluebird');
 var _ = require('lodash');
 var build_js = require('./build-js');
 var build_css = require('./build-css');
-var build_partial = require('./build-partial');
+var build_html = require('./build-html');
 var entryPoint = require('./entry-point');
 var global = Function("return this")();
 var path = require('path');
@@ -15,7 +15,7 @@ function main() {
   _.map(entries, function (entry) {
     build_js(entry, function () {
       build_css(entry, function () {
-        build_partial(entry);
+        build_html(entry);
       }.bind(this));
     }.bind(this));
   }.bind(this));
